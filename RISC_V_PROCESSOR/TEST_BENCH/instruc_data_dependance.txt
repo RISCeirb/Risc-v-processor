@@ -1,0 +1,25 @@
+Address     Code        Basic                        Line Source
+
+0x00400000  0x00100093  addi x1,x0,1                 5        addi   x1, zero, 1          
+0x00400004  0x00200113  addi x2,x0,2                 6        addi   x2, zero, 2        
+0x00400008  0x00300193  addi x3,x0,3                 7        addi   x3, zero, 3          
+0x0040000c  0x00400213  addi x4,x0,4                 8        addi   x4, zero, 4
+0x00400010  0x00500293  addi x5,x0,5                 9        addi   x5, zero, 5          
+0x00400014  0x00600313  addi x6,x0,6                 10       addi   x6, zero, 6
+0x00400018  0x00700393  addi x7,x0,7                 11       addi   x7, zero, 7          
+0x0040001c  0x00800413  addi x8,x0,8                 12       addi   x8, zero, 8  
+0x00400020  0x00900493  addi x9,x0,9                 13       addi   x9, zero, 9          
+0x00400024  0x00a00513  addi x10,x0,10               14       addi   x10, zero, 10
+0x00400028  0x002080b3  add x1,x1,x2                 19       add x1, x1 ,x2
+0x0040002c  0x003080b3  add x1,x1,x3                 20       add x1, x1 ,x3
+0x00400030  0x004080b3  add x1,x1,x4                 21       add x1, x1 ,x4
+0x00400034  0x00128133  add x2,x5,x1                 22       add x2, x5, x1
+0x00400038  0x0fc10297  auipc x5,0x0000fc10          29   	la      t0, array
+0x0040003c  0xfc828293  addi x5,x5,0xffffffc8             
+0x00400040  0x0002a083  lw x1,0(x5)                  30   	lw      x1, 0(t0)             
+0x00400044  0x00108593  addi x11,x1,1                31      	addi    x11, x1, 1
+0x00400048  0x00158633  add x12,x11,x1               32       	add 	x12, x11, x1
+0x0040004c  0x00100093  addi x1,x0,1                 33       	addi   	x1, zero, 1
+0x00400050  0x00b606b3  add x13,x12,x11              34       	add     x13, x12, x11
+0x00400054  0x00108733  add x14,x1,x1                35       	add     x14, x1, x1      
+0x00400058  0x0000006f  jal x0,0x00000000            38       j       end 
