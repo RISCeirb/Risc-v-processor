@@ -2,58 +2,108 @@
 
 ## Introduction
 
-This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. RISC-V is used in embedded systems and supercomputers.
+This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the parterson processeur for risc v. 
 
-## Introduction to Different Processors
+## Overview of Different Processors
 
-The aim of this repository is to provide simple versions of RISC-V processors and to test them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
+This repository provides simple implementations of various RISC-V processors and tests them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
-Three types of processors are available: Monocycle, pipeline, and pipeline out-of-order.
+The available processors are:
+- Monocycle
+- Pipeline
+- Pipeline with Branch Predictor
 
 ### Monocycle Processor
 
-A slow processor that executes one instruction per cycle.
+A basic processor that executes one instruction per cycle.
 
 ### Pipeline Processor
 
-A 5-stage pipeline with the following stages:
+A 5-stage pipeline processor with the following stages:
 
-- **IF (Instruction Fetch):** The program counter provides the address of the new instruction.
-- **ID (Instruction Decode):** The instruction is sent to the control unit for decoding for the ALU.
-- **EX (Execute):** The ALU calculates the bit for jumps and branches, and a unit calculates the new PC.
-- **MEM (Memory Access):** Load or store data from the memory.
-- **WB (Write Back):** Write data into the destination register.
+- **IF (Instruction Fetch)**: The program counter provides the address of the new instruction.
+- **ID (Instruction Decode)**: The instruction is sent to the control unit for decoding for the ALU.
+- **EX (Execute)**: The ALU performs calculations for jumps and branches, and a unit calculates the new PC.
+- **MEM (Memory Access)**: Load or store data from memory.
+- **WB (Write Back)**: Write data into the destination register.
 
-### Out-of-Order Pipeline
+### Pipeline with Branch Predictor
 
-Uses a cache to predict if the branch is taken or not.
+This processor uses a cache to predict whether a branch will be taken or not.
 
-- **Direct-mapped memory:** 10-bit index, 20-bit tag, and two bits for branch prediction.
+- **Direct-mapped memory**: 10-bit index, 20-bit tag, and two bits for branch prediction.
 
-USE THE INDEX AND THE TAG OF THE PC
+| PC       | TAG_PC | INDEX_PC | Useless bit (address in byte) |
+|:---------|:------:|:--------:|:-----------------------------:|
+| PC       | 31-12  |  11-2    | Useless bit (address in byte) |
 
-| PC     | TAG_PC| INDEX_PC| Useless bit (address in byte) |
-|:-------|:---:|:-----------:|:----------:|
-| PC     | 31-12 |  11-2   | Useless bit (address in byte) |
+**History table:**
 
-History table : 
+| VALID | INDEX | TAG | Target PC | 2 bits Prediction |
+|:------|:-----:|:---:|:---------:|:-----------------:|
+| VALID | 0     | TAG | Target PC | 2 bits Prediction |
+| VALID | 1     | TAG | Target PC | 2 bits Prediction |
+| VALID | 2     | TAG | Target PC | 2 bits Prediction |
+| ...   | ...   | ... | ...       | ...               |
+| VALID | 511   | TAG | Target PC | 2 bits Prediction |
 
-|INDEX| TAG | 2 bits Prediction |
-|:-------|:-----------:|:----------:|
+## FSM of the 2-bit Branch Prediction
 
+![Schematic of the 2-bit predictor](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/2%20bit%20predictor.png)
 
 ## Overview of the RISC-V Instruction Set
 
-RISC-V is a reduced instruction set computer (RISC) processor architecture offering flexibility and efficiency for modern processors. It is open source, encouraging collaboration without the constraints of proprietary licenses.
+RISC-V is a reduced instruction set computer (RISC) architecture that offers flexibility and efficiency for modern processors. Being open-source, it encourages collaboration and innovation without the constraints of proprietary licenses.
+
+### Instruction Formats
+
+The RISC-V instruction formats are:
+
+1. **R-Type**: For arithmetic and logical operations.
+2. **I-Type**: For operations with immediate values and loading data into registers.
+3. **S-Type**: For store instructions.
+4. **B-Type**: For branch instructions.
+5. **U-Type**: For large immediate values.
+6. **J-Type**: For jump instructions.
+
+![Instruction format](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Instruction%20type.png)
 
 ## Getting Started with Rars
 
-To test our processor, we will use ModelSim and Rars.
+To test our processors, we use ModelSim and Rars. An example source code is available on the Rars page, and a bubble sort implementation in RISC-V is provided to test the processors.
 
-An example source code is available on the Rars page, and a bubble sort implemented in RISC-V is provided to test our different processors.
+![Rars](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/RARS%20image.png)
+
+You can write your own assembly code with Rars and test it on the processors.
+
+### Steps to Generate Required Files
+
+1. Write your assembly code in Rars.
+2. **Run > Assembly**: Run the assembly code to view the instruction, data memory, and register file.
+3. **File > Dump to File > .data**: Create the txt file for data memory. (You will probably have to change the writing format to make this file works)
+4. **File > Dump to File > .text**: Create the txt file for instruction memory.
+
+You can find an example of this two file in the file with the vhdl code.
+
+## Getting Started with modelsim
+
+You can look in the reference the tutoriel for the modelsim installation.
+
+- Create a new project
+- Add all the VHDL file of one of the processeur and also add the txt file to implement in the instruction and data memory.
+- Compile all the file ( you will need to compile more than one time )
+- Run simulation > Add wave >  ( you can set the time to 10 us and make the data in hexadecimal in the simulation property)
+- Rerun and all the signal will be added
 
 ## References
 
 - [RISC-V Specification v2.2](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)
-- *Computer Organization and Design MIPS Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy
+- [*Computer Organization and Design MIPS Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy ](https://theswissbay.ch/pdf/Books/Computer%20science/Computer%20Organization%20and%20Design-%20The%20HW_SW%20Inteface%205th%20edition%20-%20David%20A.%20Patterson%20%26%20John%20L.%20Hennessy.pdf)
 - [ModelSim Installation Tutorial](https://www.youtube.com/watch?v=Ubcm996KKhU)
+- [Rars and Assembly in RISC-V](https://github.com/darnuria/esgi-riscv)
+- Use of CHAT GPT for some parts of TEST BENCH and README writing
+
+## Common Issues
+
+- Ensure that the assembly code generated by Rars (.data and .text files) is placed in the same directory as the VHDL file of the processor you are using for simulation.
+- Note that CentOS 7 is not compatible with Rars.
