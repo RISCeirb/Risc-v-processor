@@ -55,6 +55,20 @@ History table :
 
 RISC-V is a reduced instruction set computer (RISC) processor architecture offering flexibility and efficiency for modern processors. It is open source, encouraging collaboration without the constraints of proprietary licenses.
 
+## Different type of instruction 
+
+Les formats d'instructions RISC-V sont :
+
+1. **R-Type** : Pour les opérations arithmétiques et logiques.
+2. **I-Type** : Pour les opérations avec des valeurs immédiates et le chargement.
+3. **S-Type** : Pour les instructions de stockage.
+4. **B-Type** : Pour les instructions de branchement.
+5. **U-Type** : Pour les grandes valeurs immédiates.
+6. **J-Type** : Pour les instructions de saut.
+
+![Schematic of the 2 bit predictor](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/2%20bit%20predictor.png)
+
+
 ## Getting Started with Rars
 
 To test our processor, we will use ModelSim and Rars.
