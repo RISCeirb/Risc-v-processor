@@ -73,7 +73,18 @@ Les formats d'instructions RISC-V sont :
 
 To test our processor, we will use ModelSim and Rars.
 
-An example source code is available on the Rars page, and a bubble sort implemented in RISC-V is provided to test our different processors.
+An example source code is available on the Rars page, and i have write a bubble sort implemented in RISC-V to test our different processors.
+
+![Rars](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/RARS%image.png)
+
+You can write your own assembly code with rars and test it on the processor.
+
+To generate the txt file needed in the data and instruction memory in the VHDL file.
+
+RUN > ASSEMBLY (make the assembly code run, enable to look at the instrcution, data memory and register file)
+FILE > DUMP TO FILE > .data (create the txt file for data memory)
+FILE > DUMP TO FILE > .text (create the txt file for instruction memory)
+
 
 ## References
 
