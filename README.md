@@ -1,29 +1,60 @@
-# Introduction des différents procceseurs
+# RISC-V Project
 
-L'objectif de ce répertoire est de proposé des versions simples de processeurs RISC-V, de permettre de les tester à l'aide de modelsim et de [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_
+## Introduction
 
-Trois type de processeur sont disponibles : Monocycle, pipepline et pipeline out-of-order
+This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. RISC-V is used in embedded systems and supercomputers.
 
-Le processeur monocycle est un processeur lent qui réalise une instruction par cycle. Les deux processeurs pipelines sont des pipelines de 5 étages avec les différentes étapes:
+## Introduction to Different Processors
 
-- IF : Le programme counter donne l'addresse de la nouvelle instruction
-- ID : L'instruction est envoyer à l'unit de controle qui va decoder l'instruction pour l'alu.
-- EX : L'alu calcul le bit qui permet les sauts et branchements et une unité se charge de calculer le nouveau pc.
-- MEM : On peut load ou store des données de la mémoire de données
-- WB : On écrit dans le regitre destination la donnée. 
+The aim of this repository is to provide simple versions of RISC-V processors and to test them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
-Le pipeline out-of-ordre utilise une mémoire cache pour prédire si la branch est prise ou non.
+Three types of processors are available: Monocycle, pipeline, and pipeline out-of-order.
 
-On utilise une mémoire à addressage directe, avec un index de 10 bits et un tag de 20 bits et on a deux bits pour gérer la prédiction de branch.
+### Monocycle Processor
 
-## Prise en main de Rars
+A slow processor that executes one instruction per cycle.
 
-Pour tester le bon fonctionnement de notre processeur, on va utiliser modelsim et rars.
+### Pipeline Processor
 
-On peut utiliser le code source la page rars, mais j'ai aussi implémenter un bubble sort en risc-v pour permettre de tester nos diférents processeurs.
+A 5-stage pipeline with the following stages:
 
-# Références:
+- **IF (Instruction Fetch):** The program counter provides the address of the new instruction.
+- **ID (Instruction Decode):** The instruction is sent to the control unit for decoding for the ALU.
+- **EX (Execute):** The ALU calculates the bit for jumps and branches, and a unit calculates the new PC.
+- **MEM (Memory Access):** Load or store data from the memory.
+- **WB (Write Back):** Write data into the destination register.
 
-- https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf
-- Computer Organization and Design MIPS Edition: The Hardware/Software Interface by David A. Patterson and John L.Hennessy
--
+### Out-of-Order Pipeline
+
+Uses a cache to predict if the branch is taken or not.
+
+- **Direct-mapped memory:** 10-bit index, 20-bit tag, and two bits for branch prediction.
+
+USE THE INDEX AND THE TAG OF THE PC
+| PC     | 31-11 |  10-2   | Useless bit (address in byte) |
+| PC     | TAG_PC| INDEX_PC| Useless bit (address in byte) |
+|:-------|:---:|:-----------:|:----------:|
+
+
+History table : 
+
+|INDEX| TAG | 2 bits Prediction |
+|:-------|:-----------:|:----------:|
+
+
+## Overview of the RISC-V Instruction Set
+
+RISC-V is a reduced instruction set computer (RISC) processor architecture offering flexibility and efficiency for modern processors. It is open source, encouraging collaboration without the constraints of proprietary licenses.
+
+## Getting Started with Rars
+
+To test our processor, we will use ModelSim and Rars.
+
+An example source code is available on the Rars page, and a bubble sort implemented in RISC-V is provided to test our different processors.
+
+## References
+
+- [RISC-V Specification v2.2](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)
+- *Computer Organization and Design MIPS Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy
+- [ModelSim Installation Tutorial](https://www.youtube.com/watch?v=Ubcm996KKhU)
+- Chat GPT utilisation for the readme and VHDL testbench
