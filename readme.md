@@ -66,7 +66,7 @@ Les formats d'instructions RISC-V sont :
 5. **U-Type** : Pour les grandes valeurs immédiates.
 6. **J-Type** : Pour les instructions de saut.
 
-![Schematic of the 2 bit predictor](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/2%20bit%20predictor.png)
+![Instruction format](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Instruction%20type.png)
 
 
 ## Getting Started with Rars
