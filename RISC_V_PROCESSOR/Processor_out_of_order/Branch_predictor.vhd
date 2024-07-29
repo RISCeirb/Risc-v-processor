@@ -35,10 +35,10 @@ signal tag_memory_table : tag;
 signal valid_index : valid;
 
 alias tag_pc_if is pc_if(31 downto 12);
-alias index_if  is pc_if(12 downto 2);
+alias index_if  is pc_if(11 downto 2);
 
 alias tag_pc_ex is pc_ex(31 downto 12);
-alias index_ex  is pc_ex(12 downto 2);
+alias index_ex  is pc_ex(11 downto 2);
 
 signal new_predict_branch : prediction;
 signal writeEnable : std_logic_vector(SIZE-1 downto 0);
@@ -125,10 +125,10 @@ signal tag_memory_table : tag;
 signal valid_index : valid;
 
 alias tag_pc_if is pc_if(31 downto 12);
-alias index_if  is pc_if(12 downto 2);
+alias index_if  is pc_if(11 downto 2);
 
 alias tag_pc_ex is pc_ex(31 downto 12);
-alias index_ex  is pc_ex(12 downto 2);
+alias index_ex  is pc_ex(11 downto 2);
 
 signal new_predict_branch : prediction;
 signal writeEnable : std_logic_vector(SIZE-1 downto 0);
