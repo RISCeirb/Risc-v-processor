@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. RISC-V is used in a wide range of applications, from embedded systems to supercomputers.
+This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the parterson processeur for risc v. 
 
 ## Overview of Different Processors
 
