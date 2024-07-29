@@ -81,9 +81,11 @@ You can write your own assembly code with rars and test it on the processor.
 
 To generate the txt file needed in the data and instruction memory in the VHDL file.
 
-RUN > ASSEMBLY (make the assembly code run, enable to look at the instrcution, data memory and register file)
-FILE > DUMP TO FILE > .data (create the txt file for data memory)
-FILE > DUMP TO FILE > .text (create the txt file for instruction memory)
+Rars code is divided between the .data that load the data memory and the .text that load the instruction memory.
+
+- RUN > ASSEMBLY (make the assembly code run, enable to look at the instrcution, data memory and register file)
+- FILE > DUMP TO FILE > .data (create the txt file for data memory)
+- FILE > DUMP TO FILE > .text (create the txt file for instruction memory)
 
 
 ## References
