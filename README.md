@@ -31,10 +31,9 @@ Uses a cache to predict if the branch is taken or not.
 - **Direct-mapped memory:** 10-bit index, 20-bit tag, and two bits for branch prediction.
 
 USE THE INDEX AND THE TAG OF THE PC
-| PC     | 31-11 |  10-2   | Useless bit (address in byte) |
 | PC     | TAG_PC| INDEX_PC| Useless bit (address in byte) |
 |:-------|:---:|:-----------:|:----------:|
-
+| PC     | 31-11 |  10-2   | Useless bit (address in byte) |
 
 History table : 
 
