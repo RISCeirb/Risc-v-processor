@@ -49,7 +49,7 @@ History table :
 
 ## FSM of the 2 bit branch prediction : 
 
-![Schematic of the 2 bit predictor](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/2%20bit%20branch%20predictor.png))
+![Schematic of the 2 bit predictor](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/2%20bit%20branch%20predictor.png)
 
 ## Overview of the RISC-V Instruction Set
 
