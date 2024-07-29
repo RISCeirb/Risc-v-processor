@@ -75,7 +75,7 @@ To test our processor, we will use ModelSim and Rars.
 
 An example source code is available on the Rars page, and i have write a bubble sort implemented in RISC-V to test our different processors.
 
-![Rars](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/RARS%image.png)
+![Rars](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/RARS%20image.png)
 
 You can write your own assembly code with rars and test it on the processor.
 
