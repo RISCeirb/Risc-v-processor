@@ -80,8 +80,20 @@ You can write your own assembly code with Rars and test it on the processors.
 
 1. Write your assembly code in Rars.
 2. **Run > Assembly**: Run the assembly code to view the instruction, data memory, and register file.
-3. **File > Dump to File > .data**: Create the txt file for data memory.
+3. **File > Dump to File > .data**: Create the txt file for data memory. (You will probably have to change the writing format to make this file works)
 4. **File > Dump to File > .text**: Create the txt file for instruction memory.
+
+You can find an example of this two file in the file with the vhdl code.
+
+## Getting Started with modelsim
+
+You can look in the reference the tutoriel for the modelsim installation.
+
+- Create a new project
+- Add all the VHDL file of one of the processeur and also add the txt file to implement in the instruction and data memory.
+- Compile all the file ( you will need to compile more than one time )
+- Run simulation > Add wave >  ( you can set the time to 10 us and make the data in hexadecimal in the simulation property)
+- Rerun and all the signal will be added
 
 ## References
 
@@ -89,6 +101,7 @@ You can write your own assembly code with Rars and test it on the processors.
 - *Computer Organization and Design MIPS Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy
 - [ModelSim Installation Tutorial](https://www.youtube.com/watch?v=Ubcm996KKhU)
 - [Rars and Assembly in RISC-V](https://github.com/darnuria/esgi-riscv)
+- Use of CHAT GPT for some parts of TEST BENCH and README writing
 
 ## Common Issues
 
