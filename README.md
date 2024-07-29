@@ -21,3 +21,9 @@ On utilise une mémoire à addressage directe, avec un index de 10 bits et un ta
 Pour tester le bon fonctionnement de notre processeur, on va utiliser modelsim et rars.
 
 On peut utiliser le code source la page rars, mais j'ai aussi implémenter un bubble sort en risc-v pour permettre de tester nos diférents processeurs.
+
+# Références:
+
+- https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdfhttps://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf
+- Computer Organization and Design MIPS Edition: The Hardware/Software Interface by David A. Patterson and John L.Hennessy
+-
