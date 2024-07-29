@@ -64,6 +64,6 @@ An example source code is available on the Rars page, and a bubble sort implemen
 
 ## Issue that can be recurent
 
--- RARS will transform the assembly code into two file that need to be added in the same repository that the VHDL file of the processor you use for the simulation.
--- Centos 7 isn't compatible with RARS
+- RARS will transform the assembly code into two file that need to be added in the same repository that the VHDL file of the processor you use for the simulation.
+- Centos 7 isn't compatible with RARS
 
