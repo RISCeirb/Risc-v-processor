@@ -110,6 +110,8 @@ To be completed .. (futur VHDL File will be added)
 
 To be completed .. (futur VHDL File will be added)
 
+## Image processing application on risc-v processor
+
 ## Future of the project
 
 - Possibility to add extention to the risc-v proccessor
