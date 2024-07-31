@@ -4,7 +4,7 @@
 
 This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the parterson processeur for risc v. 
 
-## Overview of Different Processors
+## Overview of Different Processors with the RV32I Base Instruction Set, version 2.2
 
 This repository provides simple implementations of various RISC-V processors and tests them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
