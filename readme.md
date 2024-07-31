@@ -99,6 +99,13 @@ You can look in the reference the tutoriel for the modelsim installation.
 
 You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
 
+## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
+
+To be completed ..
+
+## “A” Standard Extension for Atomic Instructions, Version 2.0
+
+To be completed ..
 
 ## Future of the project
 
