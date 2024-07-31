@@ -29,7 +29,7 @@ A 5-stage pipeline processor with the following stages:
 
 ### Pipeline with Branch Predictor
 
-This processor uses a cache to predict whether a branch will be taken or not.
+This processor uses a cache to predict whether a branch will be taken or not. (See the references for more explication)
 
 - **Direct-mapped memory**: 10-bit index, 20-bit tag, and two bits for branch prediction.
 
