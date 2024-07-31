@@ -79,7 +79,7 @@ To test our processors, we use ModelSim and Rars. An example source code is avai
 
 You can write your own assembly code with Rars and test it on the processors.
 
-### Steps to Generate Required Files
+#### Steps to Generate Required Files
 
 1. Write your assembly code in Rars.
 2. **Run > Assembly**: Run the assembly code to view the instruction, data memory, and register file.
