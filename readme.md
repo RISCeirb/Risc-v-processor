@@ -104,11 +104,11 @@ You will need to install the [Risc-v cross complier](https://github.com/riscv-co
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
-To be completed ..
+To be completed .. (futur VHDL File will be added)
 
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
-To be completed ..
+To be completed .. (futur VHDL File will be added)
 
 ## Future of the project
 
