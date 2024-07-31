@@ -114,6 +114,7 @@ You will need to install the [Risc-v cross complier](https://github.com/riscv-co
 - [ModelSim Installation Tutorial](https://www.youtube.com/watch?v=Ubcm996KKhU)
 - [Rars and Assembly in RISC-V](https://github.com/darnuria/esgi-riscv)
 - [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
+- [BMP-Processing](https://stackoverflow.com/questions/54173733/convert-rgb-to-grayscale-in-bare-c)
 - Use of CHAT GPT for some parts of TEST BENCH and README writing
 
 ## Common Issues
