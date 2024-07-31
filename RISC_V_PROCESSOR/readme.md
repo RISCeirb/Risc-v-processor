@@ -4,11 +4,11 @@
 
 This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the parterson processeur for risc v. 
 
-## Overview of Different Processors
+## Overview of Different Processors with the RV32I Base Instruction Set, version 2.2
 
 This repository provides simple implementations of various RISC-V processors and tests them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
-The available processors are:
+The available processors have the RV32I Base Instruction Set:
 - Monocycle
 - Pipeline
 - Pipeline with Branch Predictor
@@ -29,7 +29,7 @@ A 5-stage pipeline processor with the following stages:
 
 ### Pipeline with Branch Predictor
 
-This processor uses a cache to predict whether a branch will be taken or not.
+This processor uses a cache to predict whether a branch will be taken or not. (See the references for more explication)
 
 - **Direct-mapped memory**: 10-bit index, 20-bit tag, and two bits for branch prediction.
 
@@ -68,7 +68,10 @@ The RISC-V instruction formats are:
 
 ![Instruction format](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Instruction%20type.png)
 
-## Getting Started with Rars
+
+## Processor Testing
+
+### Getting Started with Rars
 
 To test our processors, we use ModelSim and Rars. An example source code is available on the Rars page, and a bubble sort implementation in RISC-V is provided to test the processors.
 
@@ -76,7 +79,7 @@ To test our processors, we use ModelSim and Rars. An example source code is avai
 
 You can write your own assembly code with Rars and test it on the processors.
 
-### Steps to Generate Required Files
+#### Steps to Generate Required Files
 
 1. Write your assembly code in Rars.
 2. **Run > Assembly**: Run the assembly code to view the instruction, data memory, and register file.
@@ -85,7 +88,7 @@ You can write your own assembly code with Rars and test it on the processors.
 
 You can find an example of this two file in the file with the vhdl code.
 
-## Getting Started with modelsim
+### Getting Started with modelsim
 
 You can look in the reference the tutoriel for the modelsim installation.
 
@@ -95,12 +98,39 @@ You can look in the reference the tutoriel for the modelsim installation.
 - Run simulation > Add wave >  ( you can set the time to 10 us and make the data in hexadecimal in the simulation property)
 - Rerun and all the signal will be added
 
+### Use of RISC-V cross complier to test c code 
+
+You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
+
+## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
+
+To be completed .. (futur VHDL File will be added)
+
+## “A” Standard Extension for Atomic Instructions, Version 2.0
+
+To be completed .. (futur VHDL File will be added)
+
+## Image processing application on risc-v processor
+
+To be completed .. 
+
+## Future of the project
+
+- Possibility to add extention to the risc-v proccessor
+- Use of different algorithme to test the processor (section code c in construction) (image processing)
+- Addition of bootloader to implement the processor on fpga
+
+
 ## References
 
 - [RISC-V Specification v2.2](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)
 - [*Computer Organization and Design MIPS Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy ](https://theswissbay.ch/pdf/Books/Computer%20science/Computer%20Organization%20and%20Design-%20The%20HW_SW%20Inteface%205th%20edition%20-%20David%20A.%20Patterson%20%26%20John%20L.%20Hennessy.pdf)
+- [Cache Documentation 1](https://cseweb.ucsd.edu/classes/su07/cse141/cache-handout.pdf)
+- [Cache Documentation 2](https://courses.cs.duke.edu/spring09/cps104/lectures/2up-lecture17.pdf)
 - [ModelSim Installation Tutorial](https://www.youtube.com/watch?v=Ubcm996KKhU)
 - [Rars and Assembly in RISC-V](https://github.com/darnuria/esgi-riscv)
+- [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
+- [BMP-Processing](https://stackoverflow.com/questions/54173733/convert-rgb-to-grayscale-in-bare-c)
 - Use of CHAT GPT for some parts of TEST BENCH and README writing
 
 ## Common Issues
