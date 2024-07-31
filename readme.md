@@ -95,12 +95,25 @@ You can look in the reference the tutoriel for the modelsim installation.
 - Run simulation > Add wave >  ( you can set the time to 10 us and make the data in hexadecimal in the simulation property)
 - Rerun and all the signal will be added
 
+## Use of RISC-V cross complier to test c code 
+
+You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
+
+
+## Future of the project
+
+- Possibility to add extention to the risc-v proccessor
+- Use of different algorithme to test the processor (section code c in construction) (image processing)
+- Addition of bootloader to implement the processor on fpga
+
+
 ## References
 
 - [RISC-V Specification v2.2](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)
 - [*Computer Organization and Design MIPS Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy ](https://theswissbay.ch/pdf/Books/Computer%20science/Computer%20Organization%20and%20Design-%20The%20HW_SW%20Inteface%205th%20edition%20-%20David%20A.%20Patterson%20%26%20John%20L.%20Hennessy.pdf)
 - [ModelSim Installation Tutorial](https://www.youtube.com/watch?v=Ubcm996KKhU)
 - [Rars and Assembly in RISC-V](https://github.com/darnuria/esgi-riscv)
+- [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
 - Use of CHAT GPT for some parts of TEST BENCH and README writing
 
 ## Common Issues
