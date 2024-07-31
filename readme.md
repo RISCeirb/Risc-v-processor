@@ -68,7 +68,10 @@ The RISC-V instruction formats are:
 
 ![Instruction format](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Instruction%20type.png)
 
-## Getting Started with Rars
+
+## Processor Testing
+
+### Getting Started with Rars
 
 To test our processors, we use ModelSim and Rars. An example source code is available on the Rars page, and a bubble sort implementation in RISC-V is provided to test the processors.
 
@@ -85,7 +88,7 @@ You can write your own assembly code with Rars and test it on the processors.
 
 You can find an example of this two file in the file with the vhdl code.
 
-## Getting Started with modelsim
+### Getting Started with modelsim
 
 You can look in the reference the tutoriel for the modelsim installation.
 
@@ -95,7 +98,7 @@ You can look in the reference the tutoriel for the modelsim installation.
 - Run simulation > Add wave >  ( you can set the time to 10 us and make the data in hexadecimal in the simulation property)
 - Rerun and all the signal will be added
 
-## Use of RISC-V cross complier to test c code 
+### Use of RISC-V cross complier to test c code 
 
 You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
 
