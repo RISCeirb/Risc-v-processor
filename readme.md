@@ -100,7 +100,10 @@ You can look in the reference the tutoriel for the modelsim installation.
 
 ### Use of RISC-V cross complier to test c code 
 
-You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
+You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain), the final objective will be to test the processor with some signal processing application available on the code c section.
+
+- Gray-filter for BMP picture
+- 
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
