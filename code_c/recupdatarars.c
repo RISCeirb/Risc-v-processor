@@ -32,7 +32,7 @@ int main()
         for (int x = 0; x < width; ++x)
         {
             fread(pixel, 3, 1, fIn);
-            printf("R = %d G = %d B = %d\n", pixel[0], pixel[1], pixel[2]); // affiche les pixels de l'image
+            printf("%d  %d  %d ", pixel[0], pixel[1], pixel[2]); // affiche les pixels de l'image
             unsigned char gray = pixel[0] * 0.3 + pixel[1] * 0.58 + pixel[2] * 0.11;
             memset(pixel, gray, sizeof(pixel));
             fwrite(&pixel, 3, 1, fOut);
