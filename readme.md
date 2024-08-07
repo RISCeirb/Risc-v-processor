@@ -1,6 +1,7 @@
 # RISC-V Project
 
-$ git clone https://github.com/RISCeirb/Risc-v-processor.git
+To clone the project:
+'git clone https://github.com/RISCeirb/Risc-v-processor.git'
 
 ## Introduction
 
