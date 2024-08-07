@@ -5,7 +5,7 @@ To clone the project:
 
 ## Introduction
 
-This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the parterson processeur for risc v. 
+This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the paterson processeur for risc v in VHDL.
 
 ## Overview of Different Processors with the RV32I Base Instruction Set, version 2.2
 
