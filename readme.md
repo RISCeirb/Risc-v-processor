@@ -105,6 +105,9 @@ You can look in the reference the tutoriel for the modelsim installation.
 
 You will need to install the [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain), the final objective will be to test the processor with some signal processing application available on the code c section.
 
+Here the instruction to compile the assembly code with the risc_v isa version rv32i.
+- `riscv64-unknown-linux-gnu-gcc -march=rv32i -mabi=ilp32 -S -o test_asm.s test_asm.c`
+
 - Gray-filter for BMP picture
 - 
 
