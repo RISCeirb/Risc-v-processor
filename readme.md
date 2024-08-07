@@ -1,5 +1,7 @@
 # RISC-V Project
 
+git clone https://github.com/RISCeirb/Risc-v-processor.git
+
 ## Introduction
 
 This project explores the RISC-V instruction set, an open-source architecture designed to be simple, extensible, and modular. The processeur implemented is an adapted implementation of the parterson processeur for risc v. 
