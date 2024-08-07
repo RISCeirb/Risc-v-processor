@@ -112,7 +112,10 @@ Here the instruction to compile the assembly code with the risc_v isa version rv
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
-To be completed .. (futur VHDL File will be added)
+M-extension enable to do a multiplication and division between two register, the div_mul_unit can be add as a second alu and a new flag need to be added to stall the pipeline during the time that the calculation is running because it's take along time.
+Two version of this unit have been added, the test-bench will arrive later. 
+
+
 
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
