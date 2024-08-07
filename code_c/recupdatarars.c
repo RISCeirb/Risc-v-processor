@@ -21,10 +21,10 @@ int main()
     int stride = (width * 3 + 3) & ~3;
     int padding = stride - width * 3;
 
-    printf("width: %d (%d)\n", width, width * 3);
+    /*printf("width: %d (%d)\n", width, width * 3);
     printf("height: %d\n", height);
     printf("stride: %d\n", stride);
-    printf("padding: %d\n", padding);
+    printf("padding: %d\n", padding);*/
 
     unsigned char pixel[3];
     for (int y = 0; y < height; ++y)
@@ -32,7 +32,7 @@ int main()
         for (int x = 0; x < width; ++x)
         {
             fread(pixel, 3, 1, fIn);
-            printf("%d  %d  %d ", pixel[0], pixel[1], pixel[2]); // affiche les pixels de l'image
+            printf("%d,  %d,  %d, ", pixel[0], pixel[1], pixel[2]); // affiche les pixels de l'image
             unsigned char gray = pixel[0] * 0.3 + pixel[1] * 0.58 + pixel[2] * 0.11;
             memset(pixel, gray, sizeof(pixel));
             fwrite(&pixel, 3, 1, fOut);

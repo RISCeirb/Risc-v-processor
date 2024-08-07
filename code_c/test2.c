@@ -1,49 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[])
-{
-
-    const char *input_file = argv[1];
-    const char *output_file = argv[2];
-
-    FILE *fIn = fopen(input_file, "rb");
-    FILE *fOut = fopen(output_file, "wb");
-    if (!fIn || !fOut)
-    {
-        printf("File error.\n");
-        return 0;
-    }
-
-    unsigned char header[54];
-    fread(header, sizeof(unsigned char), 54, fIn);
-    fwrite(header, sizeof(unsigned char), 54, fOut);
-
-    int width = *(int*)&header[18];
-    int height = abs(*(int*)&header[22]);
-    int stride = (width * 3 + 3) & ~3;
-    int padding = stride - width * 3;
-
-    printf("width: %d (%d)\n", width, width * 3);
-    printf("height: %d\n", height);
-    printf("stride: %d\n", stride);
-    printf("padding: %d\n", padding);
+int main() {
+    int width = 275;
+    int height = 183;
+    int stride = 828; // Ensure stride is correctly calculated if needed
+    int padding = 3;
 
     unsigned char pixel[3];
-    for (int y = 0; y < height; ++y)
-    {
-        for (int x = 0; x < width; ++x)
-        {
-            fread(pixel, 3, 1, fIn);
-            unsigned char gray = pixel[0] * 0.3 + pixel[1] * 0.58 + pixel[2] * 0.11;
-            memset(pixel, gray, sizeof(pixel));
-            fwrite(&pixel, 3, 1, fOut);
-        }
-        fread(pixel, padding, 1, fIn);
-        fwrite(pixel, padding, 1, fOut);
+    unsigned char imagedata[height * stride]; // Assuming imagedata is populated with the image data
+    FILE *fOut = fopen("output.bmp", "wb"); // Ensure the file is correctly opened
+
+    if (fOut == NULL) {
+        perror("Error opening file");
+        return 1;
     }
+
+    for (int y = 0; y < height; ++y) {
+        for (int x = 0; x < width; ++x) {
+            unsigned int tempGray = imagedata[3 * x + y * stride] * 300 + imagedata[3 * x + 1 + y * stride] * 580 + imagedata[3 * x + 2 + y * stride] * 110;
+            unsigned char gray = (tempGray + 512) >> 10; // Shifting right by 10 bits to divide by 1024, adding 512 for rounding
+
+            memset(pixel, gray, sizeof(pixel));
+            fwrite(pixel, sizeof(pixel), 1, fOut);
+            printf("Rout = %d Gout = %d Bout = %d\n", pixel[0], pixel[1], pixel[2]); // Display the pixel values
+        }
+        unsigned char paddingBytes[3] = {0, 0, 0}; // Padding bytes (assuming padding is always 3)
+        fwrite(paddingBytes, padding, 1, fOut); // Write padding bytes
+    }
+
     fclose(fOut);
-    fclose(fIn);
     return 0;
 }
