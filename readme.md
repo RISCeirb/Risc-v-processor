@@ -143,6 +143,7 @@ To be completed ..
 - [Risc-v cross complier](https://github.com/riscv-collab/riscv-gnu-toolchain)
 - [BMP-Processing](https://stackoverflow.com/questions/54173733/convert-rgb-to-grayscale-in-bare-c)
 - [M-extension explication](https://domipheus.com/blog/designing-a-risc-v-cpu-in-vhdl-part-21-multi-cycle-execute-for-multiply-and-divide/)
+- [Division Algorithm](https://en.wikipedia.org/wiki/Division_algorithm)
 - [A-extension explication](https://www.digikey.fr/fr/blog/how-the-risc-v-atomic-extension-gives-you-superior-bit-manipulation-capabilities)
 - Use of CHAT GPT for some parts of TEST BENCH and README writing
 
