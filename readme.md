@@ -9,7 +9,7 @@ This project explores the RISC-V instruction set, an open-source architecture de
 
 ## Overview of Different Processors with the RISC-V Base Instruction Set, version 2.2
 
-This repository provides simple implementations of various RISC-V processors and tests them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
+This repository provides simple implementations of various RISC-V processors and tests using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
 ### LAST VERSION : `RV32IM`
 
