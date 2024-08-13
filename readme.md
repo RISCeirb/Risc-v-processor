@@ -11,7 +11,10 @@ This project explores the RISC-V instruction set, an open-source architecture de
 
 This repository provides simple implementations of various RISC-V processors and tests them using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
-The available processors have the RV32I Base Instruction Set: (whithout CSR and FENCE INSTRUCTION)
+LAST VERSION :
+- RV32IM
+
+The available processors have the RV32I Base Instruction Set: (WITHOUT CSR AND FENCE INSTRUCTION)
 - Monocycle
 - Pipeline
 - Pipeline with Branch Predictor
