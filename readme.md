@@ -141,7 +141,7 @@ We verifie the data processing in the sp (stack pointer of rars), and if the dat
 
 Here, the data 0x4a at the address 0x7FEFBBC0 correspond to the data 74 in the line 12157 of the image_final.txt with the following calcul :
 
-` Txt line = to_decimal(sp_address - hex_address)/3*4 = to_decimal(0x7FED81DC- 0x7FEFBBC0)/3*4 = 12157 `
+` Txt line = to_decimal(sp_address - hex_address)/3*4 = to_decimal(0x7FED81DC- 0x7FEFBBC0)/3*4 = to_decimal(239E4)/3*4 = 145892/3*4 = 12157 `
 with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 
 ## Future of the project
