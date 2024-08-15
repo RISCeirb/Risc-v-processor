@@ -137,6 +137,7 @@ We verifie the data processing in the sp (stack pointer of rars), and if the dat
 
 ` Txt line = (sp_address - hex_address)/3*4 `
 
+![Rars Image Processing](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/RARS%20image.png)
 
 ## Future of the project
 
