@@ -135,9 +135,14 @@ To generate this file, just do gcc on your computer.
 
 We verifie the data processing in the sp (stack pointer of rars), and if the data is the same, our code is working, to get the correspond bewteen the txt and hexdicimal address.
 
-` Txt line = (sp_address - hex_address)/3*4 `
+` Txt line = to_decimal(sp_address - hex_address)/3*4 ` (There is 3 pixel for each line and 4 byte per data)
 
 ![Rars Image Processing](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Test_assembly_gray%20_capture.png)
+
+Here, the data 0x4a at the address 0x7FEFBBC0 correspond to the data 74 in the line 12157 of the image_final.txt with the following calcul :
+
+` Txt line = to_decimal(sp_address - hex_address)/3*4 = to_decimal(0x7FED81DC- 0x7FEFBBC0)/3*4 = 12157 `
+with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 
 ## Future of the project
 
