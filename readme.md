@@ -130,7 +130,13 @@ To be completed .. (futur VHDL File will be added)
 
 ## Image processing application on risc-v processor
 
-To be completed .. 
+We will use a Image processing application application on our processeur, i use the code c to generate two files .txt that give the data of the image before and after processing. (made with the computer)
+To generate this file, just do gcc on your computer.
+
+We verifie the data processing in the sp (stack pointer of rars), and if the data is the same, our code is working, to get the correspond bewteen the txt and hexdicimal address.
+
+` Txt line = (sp_address - hex_address)/3*4 `
+
 
 ## Future of the project
 
