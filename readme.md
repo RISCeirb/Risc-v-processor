@@ -166,6 +166,7 @@ with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 - [M-extension explication](https://domipheus.com/blog/designing-a-risc-v-cpu-in-vhdl-part-21-multi-cycle-execute-for-multiply-and-divide/)
 - [Division Algorithm](https://en.wikipedia.org/wiki/Division_algorithm)
 - [Float](https://www.ece.ucdavis.edu/~vojin/CLASSES/EPFL/Lectures/Guyot/francais/Flottan.htm)
+- [FPU-example](https://web.cecs.pdx.edu/~mperkows/CLASS_VHDL/VHDL_CLASS_2001/Floating/projreport.html)
 - [A-extension explication](https://www.digikey.fr/fr/blog/how-the-risc-v-atomic-extension-gives-you-superior-bit-manipulation-capabilities)
 - Use of CHAT GPT for some parts of TEST BENCH and README writing
 
