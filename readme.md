@@ -132,7 +132,7 @@ After the compilation of the code c in asm, the code is not ready for rars. So i
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
 M-extension enable to do a multiplication and division between two register, the div_mul_unit can be add as a second alu. A new flag need to be added to stall the pipeline during the time that the calculation is running because it's take a long time.
-- Reduce the critical path by sequencing this operation is the next step. Instead of using a long combinatory path, the a clock the sequence the process.
+- Reduce the critical path by sequencing this operation is the next step. Instead of using a long combinatory path, use a clock to sequence the process.
 
 ## “F” Standard Extension for Single-Precision Floating-Point, Version 2.0
 
