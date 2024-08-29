@@ -136,8 +136,7 @@ M-extension enable to do a multiplication and division between two register, the
 
 ## “F” Standard Extension for Single-Precision Floating-Point, Version 2.0
 
-The floating-point is not fishnished due to a lack of time. But there is a section F-extension that i will add with the beginning of the FPU,  32 registers needs to be added to manipulate the float.
-The CSR implementation need to be added or only the float control register.
+The floating-point unit is not finished due to a lack of time. However, there is a section called FPU that i will add that is the begining of it. Also, Thirty-two registers need to be added to manipulate floating-point numbers. The CSR implementation needs to be added, or at least the floating-point control register.
 
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
