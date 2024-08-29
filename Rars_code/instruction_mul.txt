@@ -1,0 +1,62 @@
+Address     Code        Basic                        Line Source
+
+0x00400000  0x00100093  addi x1,x0,1                 5        addi   x1, zero, 1          
+0x00400004  0x00200113  addi x2,x0,2                 6        addi   x2, zero, 2        
+0x00400008  0x00300193  addi x3,x0,3                 7        addi   x3, zero, 3          
+0x0040000c  0x00400213  addi x4,x0,4                 8        addi   x4, zero, 4
+0x00400010  0x00500293  addi x5,x0,5                 9        addi   x5, zero, 5          
+0x00400014  0x00600313  addi x6,x0,6                 10       addi   x6, zero, 6
+0x00400018  0x00700393  addi x7,x0,7                 11       addi   x7, zero, 7          
+0x0040001c  0x00800413  addi x8,x0,8                 12       addi   x8, zero, 8  
+0x00400020  0x00900493  addi x9,x0,9                 13       addi   x9, zero, 9          
+0x00400024  0x00a00513  addi x10,x0,10               14       addi   x10, zero, 10
+0x00400028  0x002080b3  add x1,x1,x2                 19       add x1, x1 ,x2
+0x0040002c  0x003080b3  add x1,x1,x3                 20       add x1, x1 ,x3
+0x00400030  0x004080b3  add x1,x1,x4                 21       add x1, x1 ,x4
+0x00400034  0x00000013  addi x0,x0,0                 22       addi x0, x0, 0
+0x00400038  0x00000013  addi x0,x0,0                 23       addi x0, x0, 0
+0x0040003c  0x00128133  add x2,x5,x1                 24       add x2, x5, x1
+0x00400040  0x0fc10297  auipc x5,0x0000fc10          31   	la      t0, array
+0x00400044  0xfc028293  addi x5,x5,0xffffffc0             
+0x00400048  0x0002a083  lw x1,0(x5)                  32   	lw      x1, 0(t0)             
+0x0040004c  0x00108593  addi x11,x1,1                33      	addi    x11, x1, 1
+0x00400050  0x00b08633  add x12,x1,x11               34       	add 	x12, x1, x11
+0x00400054  0x00100093  addi x1,x0,1                 35       	addi   	x1, zero, 1
+0x00400058  0x00b606b3  add x13,x12,x11              36       	add     x13, x12, x11
+0x0040005c  0x00108733  add x14,x1,x1                37       	add     x14, x1, x1      
+0x00400060  0x00100093  addi x1,x0,1                 41       addi   x1, zero, 1          
+0x00400064  0x00200113  addi x2,x0,2                 42       addi   x2, zero, 2        
+0x00400068  0x00300193  addi x3,x0,3                 43       addi   x3, zero, 3          
+0x0040006c  0x00400213  addi x4,x0,4                 44       addi   x4, zero, 4
+0x00400070  0x00500293  addi x5,x0,5                 45       addi   x5, zero, 5          
+0x00400074  0x00600313  addi x6,x0,6                 46       addi   x6, zero, 6
+0x00400078  0x00700393  addi x7,x0,7                 47       addi   x7, zero, 7          
+0x0040007c  0x00800413  addi x8,x0,8                 48       addi   x8, zero, 8  
+0x00400080  0x00900493  addi x9,x0,9                 49       addi   x9, zero, 9          
+0x00400084  0x00a00513  addi x10,x0,10               50       addi   x10, zero, 10
+0x00400088  0x022085b3  mul x11,x1,x2                53   	mul    x11, x1, x2
+0x0040008c  0x02419633  mulh x12,x3,x4               54   	mulh   x12, x3, x4
+0x00400090  0x0262a6b3  mulhsu x13,x5,x6             55   	mulhsu x13, x5, x6
+0x00400094  0x0283b733  mulhu x14,x7,x8              56   	mulhu  x14, x7, x8
+0x00400098  0x00100093  addi x1,x0,1                 59    	addi   x1, zero, 1          
+0x0040009c  0x00200113  addi x2,x0,2                 60       	addi   x2, zero, 2        
+0x004000a0  0x00300193  addi x3,x0,3                 61       	addi   x3, zero, 3          
+0x004000a4  0x00400213  addi x4,x0,4                 62       	addi   x4, zero, 4
+0x004000a8  0x00500293  addi x5,x0,5                 63   	addi   x5, zero, 5          
+0x004000ac  0x00600313  addi x6,x0,6                 64   	addi   x6, zero, 6
+0x004000b0  0x00700393  addi x7,x0,7                 65   	addi   x7, zero, 7          
+0x004000b4  0x00800413  addi x8,x0,8                 66       	addi   x8, zero, 8  
+0x004000b8  0x00900493  addi x9,x0,9                 67       	addi   x9, zero, 9          
+0x004000bc  0x00a00513  addi x10,x0,10               68       	addi   x10, zero, 10
+0x004000c0  0x0224c5b3  div x11,x9,x2                71   	div  x11, x9, x2
+0x004000c4  0x0224e633  rem x12,x9,x2                72   	rem  x12, x9, x2
+0x004000c8  0x024556b3  divu x13,x10,x4              73   	divu x13, x10, x4
+0x004000cc  0x02457733  remu x14,x10,x4              74   	remu x14, x10, x4
+0x004000d0  0x80000e37  lui x28,0xfff80000           77   	li t3, -2147483648
+0x004000d4  0x000e0e13  addi x28,x28,0                    
+0x004000d8  0xfff00e93  addi x29,x0,0xffffffff       78   	li t4, -1
+0x004000dc  0x03de47b3  div x15,x28,x29              81   	div x15, t3, t4
+0x004000e0  0x03de6833  rem x16,x28,x29              82       	rem x16, t3, t4
+0x004000e4  0x020548b3  div x17,x10,x0               84   	div x17, x10, zero
+0x004000e8  0x02056933  rem x18,x10,x0               85       	rem x18, x10, zero
+0x004000ec  0x0000006f  jal x0,0x00000000            87       j       end 
