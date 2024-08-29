@@ -11,7 +11,7 @@ This project explores the RISC-V instruction set, an open-source architecture de
 
 This repository provides simple implementations of various RISC-V processors and tests using ModelSim and [Rars](https://github.com/TheThirdOne/rars) _RISC-V Assembler and Runtime Simulator_.
 
-### LAST VERSION : `RV32IM`
+### LAST VERSION : `RV32IM` (WITHOUT CSR AND FENCE INSTRUCTION)
 
 Note : To improve the RV32IM, the process to calcul the MUL and DIV need to be divided in cycle to increase the max frequency of the processeur, a control unit can be added to improve the couple of instruction DIV/REM.
 Just one calcul instead of two to improve the critical path.
