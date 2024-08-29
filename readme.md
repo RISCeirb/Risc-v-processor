@@ -115,7 +115,9 @@ You will need to install the [Risc-v cross complier](https://github.com/riscv-co
 Here the instruction to compile the assembly code with the risc_v isa version rv32i. `-march=rv32i` enable to chose the extention of the compilier and `-mabi=ilp32` give access to rv32 because the compilier is set on rv64.
 - `riscv64-unknown-linux-gnu-gcc -march=rv32i -mabi=ilp32 -S -o test_asm.s test_asm.c`
 - Gray-filter for BMP picture
-- 
+
+After the compilation of the code c in asm, the code is not ready for rars. So i have rewrite the data and the compileur will use the sp (stack pointer) to make the operation in the safe memory zone, call memcpy is not recognize by rars, so i have write my own version of memcpy. It's a fonction that choose a source address, a target address and copy a nulber of bytes. 
+
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
