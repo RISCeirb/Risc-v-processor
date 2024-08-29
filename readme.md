@@ -122,7 +122,10 @@ Here the instruction to compile the assembly code with the risc_v isa version rv
 M-extension enable to do a multiplication and division between two register, the div_mul_unit can be add as a second alu. A new flag need to be added to stall the pipeline during the time that the calculation is running because it's take a long time.
 - Reduce the critical path by sequencing this operation is the next step.
 
+## “F” Standard Extension for Single-Precision Floating-Point, Version 2.0
 
+The floating-point is not fishnished due to a lack of time. But there is a section F-extension that i will add with the beginning of the FPU,  32 registers needs to be added to manipulate the float.
+The CSR implementation need to be added or only the float control register.
 
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
