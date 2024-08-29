@@ -168,7 +168,10 @@ with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 - [BMP-Processing](https://stackoverflow.com/questions/54173733/convert-rgb-to-grayscale-in-bare-c)
 - [M-extension explication](https://domipheus.com/blog/designing-a-risc-v-cpu-in-vhdl-part-21-multi-cycle-execute-for-multiply-and-divide/)
 - [Division Algorithm](https://en.wikipedia.org/wiki/Division_algorithm)
-- [Float](https://www.ece.ucdavis.edu/~vojin/CLASSES/EPFL/Lectures/Guyot/francais/Flottan.htm)
+- [Float_adder](https://www.ece.ucdavis.edu/~vojin/CLASSES/EPFL/Lectures/Guyot/francais/Flottan.htm)
+- [Nan Float](https://www.doc.ic.ac.uk/~eedwards/compsys/float/nan.html)
+- [Norme Float IEEE 754](https://fr.wikipedia.org/wiki/IEEE_754#Format_simple_pr%C3%A9cision_(32_bits))
+- [Floating Point to Hex Converter](https://gregstoll.com/~gregstoll/floattohex/)
 - [FPU-example](https://web.cecs.pdx.edu/~mperkows/CLASS_VHDL/VHDL_CLASS_2001/Floating/projreport.html)
 - [A-extension explication](https://www.digikey.fr/fr/blog/how-the-risc-v-atomic-extension-gives-you-superior-bit-manipulation-capabilities)
 - Use of CHAT GPT for some parts of TEST BENCH and README writing
