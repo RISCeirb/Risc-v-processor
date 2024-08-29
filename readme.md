@@ -142,7 +142,7 @@ The floating-point unit is not finished due to a lack of time. However, there is
 
 To be completed .. (futur VHDL File will be added)
 
-## Image processing application on risc-v processor
+## Image processing application on risc-v processor (Gray-filter for BMP picture)
 
 We will use a Image processing application application on our processeur, i use the code c to generate two files .txt that give the data of the image before and after processing. (made with the computer)
 To generate this file, just do gcc on your computer.
