@@ -28,7 +28,7 @@ architecture structural of Forward_unit is
 
 begin
     -- FORWARD RS1 
-    process(RegWrite_wb, RegWrite_mem ,rd_wb, rd_mem, rs1_ex)
+    process(RegWrite_wb, RegWrite_mem ,rd_wb, rd_mem, rs1_ex, uins_ex)
     begin
 	if (uins_ex = R or uins_ex = S or uins_ex = B or uins_ex = I) then -- Forward except J and U type
     -- FORWARD ALU RESULTS
