@@ -118,6 +118,22 @@ Here the instruction to compile the assembly code with the risc_v isa version rv
 
 After the compilation of the code c in asm, the code is not ready for rars. So i have rewrite the data and the compileur will use the sp (stack pointer) to make the operation in the safe memory zone, call memcpy is not recognize by rars, so i have write my own version of memcpy. It's a fonction that choose a source address, a target address and copy a number of bytes. 
 
+## Image processing application on risc-v processor (Gray-filter for BMP picture)
+
+We will use a Image processing application application on our processeur, i use the code c to generate two files .txt that give the data of the image before and after processing. (made with the computer)
+To generate this file, just do gcc on your computer.
+
+We verifie the data processing in the sp (stack pointer of rars), and if the data is the same, our code is working, to get the correspond bewteen the txt and hexdicimal address.
+
+` Txt line = to_decimal(sp_address - hex_address)/3*4 ` (There is 3 pixel for each line and 4 byte per data)
+
+![Rars Image Processing](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Test_assembly_gray%20_capture.png)
+
+Here, the data 0x4a at the address 0x7FEFBBC0 correspond to the data 74 in the line 12157 of the image_final.txt with the following calcul :
+
+` Txt line = to_decimal(sp_address - hex_address)/3*4 = to_decimal(0x7FED81DC- 0x7FEFBBC0)/3*4 = to_decimal(239E4)/3*4 = 145892/3*4 = 12157 `
+with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
+
 ## More about the memory zone in RISC-V
 
 | **Mémoire**                  | **Adresse de départ** | **Description**                                                                                          |
@@ -141,22 +157,6 @@ The floating-point unit is not finished due to a lack of time. However, there is
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
 To be completed .. (futur VHDL File will be added)
-
-## Image processing application on risc-v processor (Gray-filter for BMP picture)
-
-We will use a Image processing application application on our processeur, i use the code c to generate two files .txt that give the data of the image before and after processing. (made with the computer)
-To generate this file, just do gcc on your computer.
-
-We verifie the data processing in the sp (stack pointer of rars), and if the data is the same, our code is working, to get the correspond bewteen the txt and hexdicimal address.
-
-` Txt line = to_decimal(sp_address - hex_address)/3*4 ` (There is 3 pixel for each line and 4 byte per data)
-
-![Rars Image Processing](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/Test_assembly_gray%20_capture.png)
-
-Here, the data 0x4a at the address 0x7FEFBBC0 correspond to the data 74 in the line 12157 of the image_final.txt with the following calcul :
-
-` Txt line = to_decimal(sp_address - hex_address)/3*4 = to_decimal(0x7FED81DC- 0x7FEFBBC0)/3*4 = to_decimal(239E4)/3*4 = 145892/3*4 = 12157 `
-with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 
 ## Future of the project
 
