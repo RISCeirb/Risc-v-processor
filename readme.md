@@ -120,7 +120,10 @@ After the compilation of the code c in asm, the code is not ready for rars. So i
 
 ## More about the memory zone in RISC-V
 
-
+Instruction Memory start address : 0x00400000
+Data Memory Start address : 0x10010000
+Heap Memory Start address : 0x10040000
+Stack pointer start address : 0x7fffeffc
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
