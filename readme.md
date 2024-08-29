@@ -120,10 +120,14 @@ After the compilation of the code c in asm, the code is not ready for rars. So i
 
 ## More about the memory zone in RISC-V
 
-Instruction Memory start address : 0x00400000
-Data Memory Start address : 0x10010000
-Heap Memory Start address : 0x10040000
-Stack pointer start address : 0x7fffeffc
+| **Mémoire**                  | **Adresse de départ** | **Description**                                                                                          |
+|------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------|
+| **Instruction Memory**        | `0x00400000`          | Contient les instructions du programme à exécuter.                                                        |
+| **Data Memory**               | `0x10010000`          | Stocke les données statiques et globales du programme.                                                    |
+| **Heap Memory**               | `0x10040000`          | Espace pour l'allocation dynamique de mémoire (tas).                                                      |
+| **Stack Pointer (SP)**        | `0x7fffeffc`          | Pointeur de pile, utilisé pour les données locales et les appels de fonction.                             |
+| **Global Pointer (gp)**       | Dépend du programme   | Pointeur vers les données globales, utilisé pour accéder rapidement aux variables globales.               |
+| **MMIO (Memory-Mapped I/O)**  | Dépend de l'implémentation | Mappage des périphériques I/O dans l'espace mémoire, permettant l'interaction avec le matériel via la mémoire. |
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
