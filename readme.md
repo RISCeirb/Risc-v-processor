@@ -200,11 +200,8 @@ The floating-point unit is not finished due to a lack of time. However, there is
 
 Here the Single-Precision Floating-Point :
 
-+-----+-----------+-----------------------+
 |  S  |  Exponent  |       Mantissa        |
-+-----+-----------+-----------------------+
 |  1  |     8      |          23           |
-+-----+-----------+-----------------------+
 
 
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
