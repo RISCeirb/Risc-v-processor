@@ -131,7 +131,7 @@ To generate this file, just do gcc on your computer. `gcc -std=c99 -o recupdatar
 
 [data image origine](code_c/imageorigine.txt)     [data image final](code_c/imagefinal.txt)
 
-We verifie the data processing in the sp (stack pointer of rars), and if the data is the same, our code is working, to get the correspond bewteen the txt and hexdicimal address.
+We verify data processing in the stack pointer (SP) of RARS. If the data matches, our code is functioning correctly, ensuring the correspondence between the text and hexadecimal addresses.
 
 ` Txt line = to_decimal(sp_address - hex_address)/3*4 ` (There is 3 pixel for each line and 4 byte per data)
 
