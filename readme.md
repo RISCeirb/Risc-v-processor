@@ -198,12 +198,16 @@ M-extension enable to do a multiplication and division between two register, the
 
 The floating-point unit is not finished due to a lack of time. However, there is a section called FPU that i will add that is the begining of it. Also, Thirty-two registers need to be added to manipulate floating-point numbers. The CSR implementation needs to be added, or at least the floating-point control register.
 
-Here the Single-Precision Floating-Point :
+Here the Single-Precision Floating-Point in RISC-V:
+
+- IEEE Float:
 
 |  **Signe**  |  **Exponent**  |       **Mantissa**        |
 |------|-------------|----------------------------------------------|
 |  1  |     8      |          23           |
 
+
+- Rounding Mode RISC-V:
 
 | Rounding Mode code | Mnemonic | Meaning                                      |
 |--------------------|----------|----------------------------------------------|
@@ -216,7 +220,8 @@ Here the Single-Precision Floating-Point :
 | 110  | Invalid  | Reserved for future use                      |
 | 111  | Dynamic  | Selects dynamic rounding mode in instruction's rm field; Invalid in Rounding Mode register |
 
-
+- FLAG CONTROL RISC-V:
+  
 | Flag | Meaning               |
 |------|-----------------------|
 | NV   | Invalid Operation     |
