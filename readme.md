@@ -205,6 +205,28 @@ Here the Single-Precision Floating-Point :
 |  1  |     8      |          23           |
 
 
+| Rounding Mode code | Mnemonic | Meaning                                      |
+|--------------------|----------|----------------------------------------------|
+| 000  | RNE      | Round to Nearest, ties to Even               |
+| 001  | RTZ      | Round towards Zero                           |
+| 010  | RDN      | Round Down (towards -∞)                      |
+| 011  | RUP      | Round Up (towards +∞)                        |
+| 100  | RMM      | Round to Nearest, ties to Max Magnitude      |
+| 101  | Invalid  | Reserved for future use                      |
+| 110  | Invalid  | Reserved for future use                      |
+| 111  | Dynamic  | Selects dynamic rounding mode in instruction's rm field; Invalid in Rounding Mode register |
+
+
+| Flag | Meaning               |
+|------|-----------------------|
+| NV   | Invalid Operation     |
+| DZ   | Divide by Zero        |
+| OF   | Overflow              |
+| UF   | Underflow             |
+| NX   | Inexact               |
+
+
+
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
 To be completed .. (futur VHDL File will be added)
