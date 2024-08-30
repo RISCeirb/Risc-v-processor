@@ -43,7 +43,7 @@ The pipeline is based on the Patterson book (not an exact representation since R
 
 ### Pipeline with Branch Predictor
 
-This processor uses a cache to predict whether a branch will be taken or not. (See the references for more explication)
+This processor uses a cache to predict whether a branch will be taken or not. (See the references for more explication).
 The branch predictor unit is added in the ID stage to reduce the number of stall. We can also imagine moving the calculation of the pc in the ID stage for the JUMP in the future.
 
 - **Direct-mapped memory**: 10-bit index, 20-bit tag, and two bits for branch prediction.
