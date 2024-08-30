@@ -134,6 +134,12 @@ Here, the data 0x4a at the address 0x7FEFBBC0 correspond to the data 74 in the l
 ` Txt line = to_decimal(sp_address - hex_address)/3*4 = to_decimal(0x7FED81DC- 0x7FEFBBC0)/3*4 = to_decimal(239E4)/3*4 = 145892/3*4 = 12157 `
 with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 
+Here the image transformation :
+
+
+
+
+
 ## More about the memory zone in RISC-V
 
 | **Memory**                   | **Start Address**      | **Description**                                                                                          |
