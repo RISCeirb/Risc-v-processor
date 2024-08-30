@@ -88,7 +88,7 @@ The RISC-V instruction formats are:
 
 ### Getting Started with Rars
 
-To test our processors, we use ModelSim and Rars. An example source code is available on the Rars page, and a bubble sort implementation in RISC-V is provided to test the processors.
+To test our processors, we use ModelSim and Rars. An example source code is available on the Rars page, and i have implemented a bubble sort in RISC-V assembly to test the processors.
 
 ![Rars](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/RARS%20image.png)
 
