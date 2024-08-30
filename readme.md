@@ -39,7 +39,7 @@ A 5-stage pipeline processor with the following stages:
 
 The pipeline is based following the patterson book :
 
-![Pipeline](https://github.com/RISCeirb/Risc-v-processor/blob/main/Picture/processeur_pipeline.png)
+![Pipeline](Picture/processor_pipeline.png)
 
 ### Pipeline with Branch Predictor
 
