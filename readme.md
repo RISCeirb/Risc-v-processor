@@ -37,7 +37,7 @@ A 5-stage pipeline processor with the following stages:
 - **MEM (Memory Access)**: Load or store data from memory.
 - **WB (Write Back)**: Write data into the destination register.
 
-The pipeline is based following the patterson book :
+The pipeline is based on the Patterson book (not an exact representation since RISC-V ≠ MIPS).
 
 ![Pipeline](Picture/processor_pipeline.png)
 
