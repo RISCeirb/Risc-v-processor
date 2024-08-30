@@ -23,6 +23,26 @@ The available processors have the RV32I Base Instruction Set: (WITHOUT CSR AND F
 - Pipeline
 - Pipeline with Branch Predictor
 
+Have made the processor following the RISC-V ISA and the Patterson Book describing a MIPS processor.
+
+Here the difference:
+
+|                   	| **RISC-V**                                            	| **MIPS**                                            	|
+|-----------------------|-----------------------------------------------------------|---------------------------------------------------------|
+| **Ressemblances**  	| - Basé sur l'architecture RISC                        	| - Basé sur l'architecture RISC                      	|
+|                   	| - Architecture Load/Store                             	| - Architecture Load/Store                           	|
+|                   	| - 32 registres généralistes avec un registre fixe à zéro  | - 32 registres généralistes avec un registre fixe à zéro|
+|                   	| - Instructions de taille fixe (32 bits)               	| - Instructions de taille fixe (32 bits)             	|
+|                   	| - Conventions d'appel basées sur les registres        	| - Conventions d'appel basées sur les registres      	|
+|                   	| - Support des opérations atomiques                    	| - Support des opérations atomiques                  	|
+| **Différences**    	| - ISA open-source, modulaire et extensible            	| - ISA propriétaire avec des extensions spécifiques  	|
+|                   	| - Extensions standardisées (RV32M, RV32F, etc.)       	| - Extensions spécifiques (MIPS-16, MIPS-3D, etc.)   	|
+|                   	| - Format compressé (RVC) pour des instructions 16 bits	| - Format compressé (MIPS-16) pour des instructions 16 bits |
+|                   	| - Support standardisé de la virtualisation (extensions H) | - Support de la virtualisation dépendant des extensions |
+|                   	| - Simplicité de conception pour divers types de processeurs | - Conçu principalement pour les systèmes embarqués 	|
+
+
+
 ### Monocycle Processor
 
 A basic processor that executes one instruction per cycle. Momocycle processor MIPS in the Patterson Book that i have transform to RISC-V.
