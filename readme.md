@@ -41,11 +41,11 @@ The pipeline is based on the Patterson book (not an exact representation since R
 
 ![Pipeline](Picture/pipelineimage.png)
 
-- **Unité de forwarding** :
-  - Cette unité permet de résoudre les dépendances de données en transférant les résultats d'étapes plus avancées (comme MEM et WB) vers les étapes précédentes pour éviter les stalls.
+- **Forwarding Unit**:  
+  - This unit resolves data dependencies by forwarding results from later stages (such as MEM and WB) to earlier stages to avoid stalls.
 
-- **Unités de détection de hazard** :
-  - Deux unités importantes : une pour les hazards liés aux chargements (load-use hazards) et une autre pour la gestion des instructions de branchement, permettant d'éviter les conflits de données et d'assurer l'exécution correcte du pipeline.
+- **Hazard Detection Units**:  
+  - Two important units: one for load-use hazards and another for managing branch instructions. These units help prevent data conflicts and ensure correct pipeline execution.
 
 
 ### Pipeline with Branch Predictor
