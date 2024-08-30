@@ -142,6 +142,8 @@ Here the image transformation :
 
 ## More about the memory zone in RISC-V
 
+I have implemented only the data and instruction memory in this processor, to execute more advance program, you can add the heap and stack counter memory.
+
 | **Memory**                   | **Start Address**      | **Description**                                                                                          |
 |------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------|
 | **Instruction Memory**        | `0x00400000`          | Contains the program instructions to be executed.                                                        |
