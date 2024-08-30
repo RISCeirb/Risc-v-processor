@@ -125,7 +125,7 @@ After the compilation of the code c in asm, the code is not ready for rars. So i
 
 ### Image processing application on risc-v processor [Gray-filter for BMP picture](Rars_code/grayfinal.asm)
 
-We will use a Image processing application application on our processeur, i use the code c to generate two files .txt that give the data of the image before and after processing. (made with the computer)
+We will use a Image processing application application on our processeur, the `RV32IM`, to test it. I use the code c to generate two files .txt that give the data of the image before and after processing. (made with the computer)
 To generate this file, just do gcc on your computer.
 
 We verifie the data processing in the sp (stack pointer of rars), and if the data is the same, our code is working, to get the correspond bewteen the txt and hexdicimal address.
