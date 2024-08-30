@@ -39,7 +39,7 @@ A 5-stage pipeline processor with the following stages:
 
 The pipeline is based on the Patterson book (not an exact representation since RISC-V ≠ MIPS).
 
-![Pipeline](Picture/processor_pipeline.png)
+![Pipeline](Picture/pipelineimage.png)
 
 ### Pipeline with Branch Predictor
 
