@@ -136,7 +136,7 @@ with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 
 Here the image transformation :
 
-![Input image](code_c/input.bmp)   >>   ![Output image](code_c/output.bmp)
+![Input image](code_c/input.bmp)     ![Output image](code_c/output.bmp)
 
 
 
