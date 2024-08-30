@@ -171,7 +171,7 @@ To be completed .. (futur VHDL File will be added)
 - Possibility to add extention to the risc-v proccessor
 - Use of different algorithme to test the processor (section code c in construction) (image processing)
 - Addition of bootloader to implement the processor on fpga
-
+- Changing solutions or increasing the stage number of the pipeline to increase the critical path.
 
 ## References
 
