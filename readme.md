@@ -198,6 +198,14 @@ M-extension enable to do a multiplication and division between two register, the
 
 The floating-point unit is not finished due to a lack of time. However, there is a section called FPU that i will add that is the begining of it. Also, Thirty-two registers need to be added to manipulate floating-point numbers. The CSR implementation needs to be added, or at least the floating-point control register.
 
+Here the Single-Precision Floating-Point :
+
++-----+-----------+-----------------------+
+| S   | Exponent  | Mantissa              |
++-----+-----------+-----------------------+
+|  1  |    8      |           23          |
++-----+-----------+-----------------------+
+
 ## “A” Standard Extension for Atomic Instructions, Version 2.0
 
 To be completed .. (futur VHDL File will be added)
