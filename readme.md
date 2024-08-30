@@ -136,14 +136,15 @@ with the start address of the sp that is 0x7FED81DC in rars and in risc-v.
 
 ## More about the memory zone in RISC-V
 
-| **Mémoire**                  | **Adresse de départ** | **Description**                                                                                          |
+| **Memory**                   | **Start Address**      | **Description**                                                                                          |
 |------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------|
-| **Instruction Memory**        | `0x00400000`          | Contient les instructions du programme à exécuter.                                                        |
-| **Data Memory**               | `0x10010000`          | Stocke les données statiques et globales du programme.                                                    |
-| **Heap Memory**               | `0x10040000`          | Espace pour l'allocation dynamique de mémoire (tas).                                                      |
-| **Stack Pointer (SP)**        | `0x7fffeffc`          | Pointeur de pile, utilisé pour les données locales et les appels de fonction.                             |
-| **Global Pointer (gp)**       | Dépend du programme   | Pointeur vers les données globales, utilisé pour accéder rapidement aux variables globales.               |
-| **MMIO (Memory-Mapped I/O)**  | Dépend de l'implémentation | Mappage des périphériques I/O dans l'espace mémoire, permettant l'interaction avec le matériel via la mémoire. |
+| **Instruction Memory**        | `0x00400000`          | Contains the program instructions to be executed.                                                        |
+| **Data Memory**               | `0x10010000`          | Stores the program's static and global data.                                                              |
+| **Heap Memory**               | `0x10040000`          | Space for dynamic memory allocation (heap).                                                               |
+| **Stack Pointer (SP)**        | `0x7fffeffc`          | Stack pointer, used for local data and function calls.                                                    |
+| **Global Pointer (gp)**       | Depends on the program| Pointer to global data, used for quick access to global variables.                                        |
+| **MMIO (Memory-Mapped I/O)**  | Depends on implementation | Mapping of I/O devices into memory space, allowing interaction with hardware via memory.                  |
+
 
 ## “M” Standard Extension for Integer Multiplication and Division, Version 2.0
 
