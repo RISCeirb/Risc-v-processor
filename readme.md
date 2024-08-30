@@ -30,15 +30,14 @@ Here the difference:
 |                   	| **RISC-V**                                            	| **MIPS**                                            	|
 |-----------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | **Similarities**  	    | - Based on RISC architecture                          	| - Based on RISC architecture                          	|
-|                   	| - Load/Store architecture                              	| - Load/Store architecture                              	|
+|                   	| - Load/Store architecture                              	    | - Load/Store architecture                              	|
 |                   	| - 32 general-purpose registers with a fixed zero register 	| - 32 general-purpose registers with a fixed zero register|
-|                   	| - Fixed-size instructions (32 bits)                     	| - Fixed-size instructions (32 bits)                    	|
-|                   	| - Register-based calling conventions                    	| - Register-based calling conventions                    	|
-|                   	| - Support for atomic operations                         	| - Support for atomic operations                        	|
-| **Differences**    	| - Open-source, modular, and extensible ISA             	| - Proprietary ISA with specific extensions             	|
-|                     | - Rd always the destination register                     	| - Rd or Rt (for load) can be the destination register  	|
-|                   	| - Standardized extensions (RV32M, RV32F, etc.)          	| - Specific extensions (MIPS-16, MIPS-3D, etc.)          	|
-|                   	| - Simplicity in design for various types of processors     | - Primarily designed for embedded systems              	|
+|                   	| - Fixed-size instructions (32 bits)                     	  | - Fixed-size instructions (32 bits)                    	|
+|                   	| - Register to register operation                         	  | - Register to register operation                    	  |
+| **Differences**    	| - Open-source, modular, and extensible ISA             	    | - Proprietary ISA with specific extensions             	|
+|                     | - Rd always the destination register                     	  | - Rd or Rt (for load) can be the destination register  	|
+|                   	| - Standardized extensions (RV32M, RV32F, etc.)          	  | - Specific extensions (MIPS-16, MIPS-3D, etc.)          |
+|                   	| - Simplicity in design for various types of processors      | - Primarily designed for embedded systems              	|
 
 
 
