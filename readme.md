@@ -36,7 +36,7 @@ Here the difference:
 |                   	| - Conventions d'appel basées sur les registres        	| - Conventions d'appel basées sur les registres      	|
 |                   	| - Support des opérations atomiques                    	| - Support des opérations atomiques                  	|
 | **Différences**    	| - ISA open-source, modulaire et extensible            	| - ISA propriétaire avec des extensions spécifiques  	|
-|                     | - Rd always the destination registers (simple)          | - Rt or rs2 can be the destination register           |
+|                     | - Rd always the destination registers (simple)          | - Rd or Rt(for load) can be the destination register  |
 |                   	| - Extensions standardisées (RV32M, RV32F, etc.)       	| - Extensions spécifiques (MIPS-16, MIPS-3D, etc.)   	|
 |                   	| - Simplicité de conception pour divers types de processeurs | - Conçu principalement pour les systèmes embarqués 	|
 
